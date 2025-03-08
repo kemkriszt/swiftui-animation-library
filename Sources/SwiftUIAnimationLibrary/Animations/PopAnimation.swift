@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func popAnimation(animated: Bool, delay: Double = 0) -> some View {
+    func popAnimation(animated: Bool, delay: Double = 0, speed: Double = 1.5) -> some View {
         self.opacity(animated ? 1 : 0)
             .scaleEffect(animated ? 1 : 0)
             .animation(.bouncy(extraBounce: 0.3).speed(1.5).delay(delay), value: animated)

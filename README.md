@@ -7,4 +7,14 @@ Even though its structured as a swift package, it is not intended to be used as 
 
 ## Showcase package contents
  
-TODO: Add
+### Merging Circles
+
+![Showcase/merging.gif](Showcase/merging.gif)
+
+### Pop Animation
+
+![Showcase/pop.gif](Showcase/pop.gif)
+
+### Custom Slider
+
+![Showcase/slider.gif](Showcase/slider.gif)
