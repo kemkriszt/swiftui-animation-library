@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension View {
+    /// Simple SwiftUI animation that uses multiple effects to create a pop effect on a view
     func popAnimation(animated: Bool, delay: Double = 0, speed: Double = 1.5) -> some View {
         self.opacity(animated ? 1 : 0)
             .scaleEffect(animated ? 1 : 0)

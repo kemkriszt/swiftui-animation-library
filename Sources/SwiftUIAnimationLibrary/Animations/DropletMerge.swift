@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// SwiftUI animations presenting two dots that merge into each other niceline
 struct DropletMerge: View {
     private let mainColor: Color = .blue
     private let secondaryColor: Color = .black

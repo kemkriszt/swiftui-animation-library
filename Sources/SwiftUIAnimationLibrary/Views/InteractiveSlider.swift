@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// A slide view with custom animation
+/// Based on the design made by @MJawinski. (https://x.com/MJawinski)
 struct InteractiveSlider: View {
     private static let handleWidth: Double = 5
     private static let cornerRadius: Double = 5
@@ -20,7 +22,6 @@ struct InteractiveSlider: View {
     @Namespace private var namespace
     
     @State private var percent: Double = 0.46
-    
     @State private var leftTitleShowingBelow: Bool = false
     @State private var rightTitleShowingBelow: Bool = false
     
@@ -86,6 +87,11 @@ struct InteractiveSlider: View {
         .frame(height: 52)
     }
     
+    // This code is the most important part of this view. `ViewThatFits` ensures that the
+    // text is hidden when the space becomes too little, but because of the order how SwiftUI
+    // calls `onAppear`, it's not enough to have the text view in the ViewThatFits. With that only,
+    // the `matchedGeometryEffect` will not work. As a conclusion, the `Text` inside the
+    // `ViewThatFits` is only used to detect the correct size and the actual text rendering is done in the overlay
     func visibilityReportingTextView(_ text: String,
                                      _ visilibity: Binding<Bool>,
                                      geometryId: String,
