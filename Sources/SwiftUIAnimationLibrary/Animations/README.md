@@ -7,8 +7,8 @@ how a certain type of animation can be achieved in SwiftUI
 
 ### Merging Circles
 
-![Showcase/merging.gif](Showcase/merging.gif)
+![Showcase/merging.gif](/Showcase/merging.gif)
 
 ### Pop Animation
 
-![Showcase/pop.gif](Showcase/pop.gif)
+![Showcase/pop.gif](/Showcase/pop.gif)
